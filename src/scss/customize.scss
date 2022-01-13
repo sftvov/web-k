@@ -1,0 +1,133 @@
+$colorMain: #302021;
+$colorSecond: #203027;
+$colorLight: #e2d6d5;
+$colorMainHover: #4f3436;
+$colorLinkHover: #202930;
+$colorBright: #302021;
+$colorAlert: #ff3451;
+$colorText: #110c0d;
+$colorTextGray: #5b5b5b;
+$colorTextLight: #c6c6c6;
+
+body {
+	color: $colorText;
+	@media (min-width: $md1+px) {
+		font-size: 30px;
+	}
+	@media (min-width: $md2+px) {
+		font-size: 25;
+	}
+	@media (min-width: $md3+px) {
+		font-size: 22px;
+	}
+	font-size: 18px;
+	line-height: 1.4;
+	font-weight: 400;
+	letter-spacing: 0em;
+	font-style: normal;
+}
+
+// ._button {
+// 	text-align: center;
+// 	font-size: 1.11em;
+// 	padding: 20px 51px;
+// 	border-radius: 8px;
+// 	cursor: pointer;
+// 	transition: background-color 0.3s ease, transform 0.3s ease;
+// 	&:active {
+// 		transform: translateY(2px);
+// 	}
+// }
+
+// ._button--main {
+// 	color: $colorLight;
+// 	background-color: $colorMain;
+// 	&:hover {
+// 		background-color: $colorMainHover;
+// 	}
+// }
+
+._title {
+	// text-transform: uppercase;
+	font-size: 2em;
+	font-weight: 700;
+	padding: 24px 0;
+	@media (min-width: $md2+px) {
+		padding: 48px 0;
+	}
+}
+
+._section {
+	margin-bottom: 30px;
+	@media (min-width: $md2+px) {
+		margin-bottom: 60px;
+	}
+}
+
+// ._underline {
+// 	position: relative;
+// 	&::before {
+// 		content: '';
+// 		position: absolute;
+// 		width: calc(100% + 15px);
+// 		height: 1px;
+// 		background-color: $colorText;
+// 		transition: width 0.3s ease-out;
+// 		@include common-value('bottom', -1);
+// 	}
+// }
+
+// ._cross {
+// 	cursor: pointer;
+// 	padding: 20px;
+// 	&::after,
+// 	&::before {
+// 		position: absolute;
+// 		top: 19px;
+// 		right: 10px;
+// 		content: '';
+// 		width: 20px;
+// 		height: 2px;
+// 	}
+// 	&::after {
+// 		transform: rotate(45deg);
+// 	}
+// 	&::before {
+// 		transform: rotate(-45deg);
+// 	}
+// }
+
+// ._arrow {
+// 	position: relative;
+// 	padding-left: 20px;
+// 	&::after,
+// 	&::before {
+// 		content: '';
+// 		position: absolute;
+// 		width: 10px;
+// 		height: 2px;
+// 		background-color: $colorText;
+// 		border-radius: 25%;
+// 		transition: all 0.5s ease;
+// 	}
+// 	&::after {
+// 		top: calc(50% + 1px);
+// 		transform: rotate(50deg);
+// 		right: -4px;
+// 	}
+// 	&::before {
+// 		top: calc(50% + 1px);
+// 		transform: rotate(130deg);
+// 	}
+// 	&._active {
+// 		&::after {
+// 			transform: rotate(130deg);
+// 		}
+
+// 		&::before {
+// 			transform: rotate(40deg);
+// 			bottom: calc(50% + 2px);
+// 			right: 12px;
+// 		}
+// 	}
+// }

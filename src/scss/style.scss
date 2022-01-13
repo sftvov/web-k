@@ -1,0 +1,98 @@
+@import 'mixins';
+@import 'fonts';
+
+$fontFamily: 'CormorantGaramond';
+$minWidth: 450;
+$maxWidth: 2400;
+
+$maxWidthContainer: 1600;
+$laptopContainer: 1200;
+$padContainer: 800;
+$mobileContainer: $minWidth - 20;
+
+//Breakpoints:
+//desktop
+$md1: $maxWidthContainer + 39.95;
+//laptop
+$md2: $laptopContainer + 39.95;
+//pad
+$md3: $padContainer + 39.95;
+//mobile
+
+@import 'customize';
+@import 'null';
+@import 'icons';
+
+.wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: $maxWidth + px;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	&._loaded {
+	}
+	// &__background {
+	// 	position: absolute;
+	// 	top: calc(-100vw / 1904 * 276);
+	// 	right: -38.55%;
+	// 	max-width: 1444px;
+	// 	width: calc(100vw / 1904 * 1444);
+	// 	@media (min-width: $maxWidth+px) {
+	// 		top: -276px;
+	// 	}
+	// }
+}
+
+.page {
+	min-width: 0;
+	min-height: 0;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	flex: 1 1 auto;
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	@media (max-width: $md1+px) {
+		max-width: $laptopContainer + px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: $padContainer + px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: $mobileContainer + px;
+	}
+	// @media (max-width: $md3+px) {
+	// 	padding-left: 17.5px;
+	// 	padding-right: 17.5px;
+	// }
+}
+
+// @import 'functions';
+
+@import 'header';
+
+// @import 'templates/checkboxes/checkbox';
+
+// @import 'templates/forms/form';
+
+// @import 'templates/sliders/mainSlider';
+
+// @import 'templates/textWithPhoto/imageText';
+// @import 'templates/textWithPhoto/wideBlock';
+
+// @import 'templates/galleries/photogallery';
+// @import 'templates/galleries/squaresGallery';
+// @import 'templates/galleries/wideGallery';
+
+// @import 'templates/popups/popup';
+
+// @import 'footer';
